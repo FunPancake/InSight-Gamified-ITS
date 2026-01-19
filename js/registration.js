@@ -67,7 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Add role-specific data
         if (role === 'student') {
-            userData.studentId = document.getElementById('studentId').value;
             userData.grade = document.getElementById('grade').value;
             userData.section = document.getElementById('section').value;
         } else if (role === 'teacher') {

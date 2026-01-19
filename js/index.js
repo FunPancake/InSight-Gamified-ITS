@@ -1,5 +1,5 @@
 //starting point of learning
-    console.log("Hello World");
+    console.log("This is how you code in java script");
 
 document.addEventListener('DOMContentLoaded', function(){
 

@@ -1,0 +1,60 @@
+so i have gamified ITS
+
+main Landing page
+it has registration
+it has login page
+
+it has student land page
+it has teacher land page
+it has admin Land page
+
+
+registration will go back to log in page
+
+and it will check the database for the unique user name if its student or teacher
+
+student will have to input the class section
+
+then he will be filtered in database what section that student he is
+
+teacher will have to register what sections they are managing
+
+then once teacher log in he will be able to check with progress of each student on chosen class
+
+and see progress, achievement and time spent on the ITS
+
+log in student
+
+student will have own menu
+
+menu will be 
+start the game 
+leaderboards
+settings
+quit
+
+css visuals is 20-30%
+game
+-> procrastination behavior algorithm test
+-> visuals
+-> Gen Ai gagamit ng ELO aglo
+-> ELO algo
+-> elo -> Database
+-> achievements
+-> notices for achievement badges
+-> progression bar ||| level 20/50 
+-> 
+
+C# topic <- Survey <- letter
+^^^
+approval
+
+
+3 folder
+
+back end
+
+front end
+
+database 1-5%
+- 1 file

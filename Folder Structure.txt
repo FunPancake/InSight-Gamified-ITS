@@ -1,0 +1,186 @@
+gamified-its/
+│
+├── index.html                          # Main landing page
+├── README.md
+│
+├── frontend/
+│   │
+│   ├── pages/
+│   │   ├── landing.html               # Main landing page (or use index.html)
+│   │   ├── login.html                 # Universal login page
+│   │   ├── registration.html          # Universal registration page
+│   │   │
+│   │   ├── student/
+│   │   │   ├── student-dashboard.html      # Student landing page
+│   │   │   ├── game.html                   # The actual ITS game interface
+│   │   │   ├── leaderboard.html            # Leaderboard page
+│   │   │   ├── settings.html               # Student settings
+│   │   │   └── profile.html                # Student profile/achievements
+│   │   │
+│   │   ├── teacher/
+│   │   │   ├── teacher-dashboard.html      # Teacher landing page
+│   │   │   ├── class-selection.html        # Choose which class to view
+│   │   │   ├── class-overview.html         # View all students in selected class
+│   │   │   ├── student-progress.html       # Individual student detailed progress
+│   │   │   ├── analytics.html              # Class analytics and reports
+│   │   │   └── settings.html               # Teacher settings
+│   │   │
+│   │   └── admin/
+│   │       ├── admin-dashboard.html        # Admin landing page
+│   │       ├── user-management.html        # Manage users
+│   │       ├── class-management.html       # Manage classes/sections
+│   │       ├── system-settings.html        # System configurations
+│   │       └── reports.html                # System-wide reports
+│   │
+│   ├── css/
+│   │   ├── global.css                 # Global styles for all pages
+│   │   ├── landing.css                # Landing page styles
+│   │   ├── login.css                  # Login page styles
+│   │   ├── registration.css           # Registration page styles
+│   │   ├── student/
+│   │   │   ├── dashboard.css
+│   │   │   ├── game.css
+│   │   │   └── leaderboard.css
+│   │   ├── teacher/
+│   │   │   ├── dashboard.css
+│   │   │   └── analytics.css
+│   │   └── admin/
+│   │       └── admin.css
+│   │
+│   ├── js/
+│   │   ├── utils/
+│   │   │   ├── api.js                 # API call functions
+│   │   │   ├── auth.js                # Authentication helper functions
+│   │   │   ├── validation.js          # Form validation functions
+│   │   │   └── storage.js             # LocalStorage/SessionStorage helpers
+│   │   │
+│   │   ├── login.js                   # Login page logic
+│   │   ├── registration.js            # Registration page logic
+│   │   │
+│   │   ├── student/
+│   │   │   ├── dashboard.js           # Student dashboard logic
+│   │   │   ├── game.js                # Game logic and interactions
+│   │   │   ├── leaderboard.js         # Leaderboard logic
+│   │   │   ├── settings.js            # Student settings logic
+│   │   │   └── menu.js                # Student menu interactions
+│   │   │
+│   │   ├── teacher/
+│   │   │   ├── dashboard.js           # Teacher dashboard logic
+│   │   │   ├── class-selection.js     # Class selection logic
+│   │   │   ├── student-progress.js    # Student progress tracking
+│   │   │   └── analytics.js           # Analytics visualization
+│   │   │
+│   │   └── admin/
+│   │       ├── dashboard.js
+│   │       ├── user-management.js
+│   │       └── class-management.js
+│   │
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── logo.png
+│   │   │   ├── avatars/               # Student/teacher avatars
+│   │   │   ├── achievements/          # Achievement badges/icons
+│   │   │   └── game/                  # Game-related images
+│   │   │
+│   │   ├── icons/
+│   │   │   └── menu-icons/            # Icons for student menu
+│   │   │
+│   │   └── sounds/                    # Game sounds and effects
+│   │       ├── achievement.mp3
+│   │       └── background-music.mp3
+│   │
+│   └── components/                    # Reusable UI components (optional)
+│       ├── navbar.html
+│       ├── sidebar.html
+│       └── modal.html
+│
+├── backend/
+│   │
+│   ├── server.js                      # Main server file (Node.js/Express)
+│   │                                  # OR index.php for PHP
+│   │                                  # OR app.py for Python
+│   │
+│   ├── config/
+│   │   ├── database.js                # Database connection config
+│   │   ├── environment.js             # Environment variables
+│   │   └── constants.js               # App constants
+│   │
+│   ├── models/                        # Data models (Database schema)
+│   │   ├── User.js                    # Base user model
+│   │   ├── Student.js                 # Student-specific model
+│   │   ├── Teacher.js                 # Teacher-specific model
+│   │   ├── Admin.js                   # Admin-specific model
+│   │   ├── Class.js                   # Class/section model
+│   │   ├── Progress.js                # Student progress model
+│   │   ├── Achievement.js             # Achievement model
+│   │   ├── GameSession.js             # Game session tracking
+│   │   └── Leaderboard.js             # Leaderboard model
+│   │
+│   ├── controllers/                   # Business logic
+│   │   ├── authController.js          # Authentication (login/register/logout)
+│   │   ├── userController.js          # User CRUD operations
+│   │   ├── studentController.js       # Student-specific operations
+│   │   ├── teacherController.js       # Teacher-specific operations
+│   │   ├── adminController.js         # Admin-specific operations
+│   │   ├── classController.js         # Class management
+│   │   ├── progressController.js      # Progress tracking
+│   │   ├── achievementController.js   # Achievement management
+│   │   ├── gameController.js          # Game logic and scoring
+│   │   └── leaderboardController.js   # Leaderboard operations
+│   │
+│   ├── routes/                        # API endpoints
+│   │   ├── authRoutes.js              # /api/auth/* routes
+│   │   ├── studentRoutes.js           # /api/student/* routes
+│   │   ├── teacherRoutes.js           # /api/teacher/* routes
+│   │   ├── adminRoutes.js             # /api/admin/* routes
+│   │   ├── classRoutes.js             # /api/class/* routes
+│   │   ├── progressRoutes.js          # /api/progress/* routes
+│   │   ├── gameRoutes.js              # /api/game/* routes
+│   │   └── leaderboardRoutes.js       # /api/leaderboard/* routes
+│   │
+│   ├── middleware/
+│   │   ├── authMiddleware.js          # Verify user is logged in
+│   │   ├── roleMiddleware.js          # Check user role (student/teacher/admin)
+│   │   ├── validationMiddleware.js    # Validate request data
+│   │   ├── errorHandler.js            # Global error handling
+│   │   └── rateLimiter.js             # Prevent spam/abuse
+│   │
+│   ├── services/                      # Additional business logic
+│   │   ├── emailService.js            # Send emails (password reset, etc.)
+│   │   ├── gamificationService.js     # Calculate points, achievements
+│   │   ├── analyticsService.js        # Generate analytics data
+│   │   └── notificationService.js     # Handle notifications
+│   │
+│   └── utils/
+│       ├── passwordHash.js            # Password encryption
+│       ├── tokenGenerator.js          # JWT token generation
+│       ├── logger.js                  # Logging utility
+│       └── dataFormatter.js           # Format data for responses
+│
+├── database/
+│   ├── schema.sql                     # Database schema (table structures)
+│   ├── seeds.sql                      # Sample data for testing
+│   └── migrations/                    # Database version control
+│       ├── 001_create_users_table.sql
+│       ├── 002_create_classes_table.sql
+│       ├── 003_create_progress_table.sql
+│       └── 004_create_achievements_table.sql
+│
+├── tests/                             # Testing files
+│   ├── unit/
+│   │   ├── auth.test.js
+│   │   └── progress.test.js
+│   ├── integration/
+│   │   └── api.test.js
+│   └── e2e/
+│       └── userFlow.test.js
+│
+├── docs/                              # Documentation
+│   ├── API.md                         # API documentation
+│   ├── DATABASE.md                    # Database schema documentation
+│   ├── SETUP.md                       # Setup instructions
+│   └── ARCHITECTURE.md                # Architecture explanation
+│
+└── package.json                       # Dependencies (for Node.js)
+    OR requirements.txt                # Dependencies (for Python)
+    OR composer.json                   # Dependencies (for PHP)

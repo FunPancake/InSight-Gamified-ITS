@@ -53,6 +53,8 @@ approval
 3 folder
 
 back end
+- check MONACO editor
+- Terminal APIS
 
 front end
 

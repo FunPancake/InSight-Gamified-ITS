@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration</h1>
+        
+        <div class="registration-form">
+            <form id="registrationForm">
+                
+                <!-- Role Selection -->
+                <div class="form-group">
+                    <label for="role">Select Role:</label>
+                    <select id="role" name="role" required>
+                        <option value="">-- Select Role --</option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="proctor">Proctor</option>
+                    </select>
+                </div>
+                
+                <!-- Basic Information (for all users) -->
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                
+                <!-- Student-specific fields -->
+                <div id="studentFields" class="role-specific-fields" style="display: none;">
+                    <h3>Student Information</h3>
+                    
+                    <div class="form-group">
+                        <label for="grade">Grade/Year Level:</label>
+                        <input type="text" id="grade" name="grade">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="section">Section/Class:</label>
+                        <input type="text" id="section" name="section">
+                    </div>
+                </div>
+                
+                <!-- Teacher-specific fields -->
+                <div id="teacherFields" class="role-specific-fields" style="display: none;">
+                    <h3>Teacher Information</h3>
+                    
+                    <div class="form-group">
+                        <label for="teacherId">Teacher/Employee ID:</label>
+                        <input type="text" id="teacherId" name="teacherId">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="department">Department:</label>
+                        <input type="text" id="department" name="department">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject(s) Teaching:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                </div>
+                
+                <!-- Proctor-specific fields -->
+                <div id="proctorFields" class="role-specific-fields" style="display: none;">
+                    <h3>Proctor Information</h3>
+                    
+                    <div class="form-group">
+                        <label for="proctorId">Employee ID:</label>
+                        <input type="text" id="proctorId" name="proctorId">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="proctorDepartment">Department:</label>
+                        <input type="text" id="proctorDepartment" name="proctorDepartment">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="accessCode">Admin Access Code:</label>
+                        <input type="password" id="accessCode" name="accessCode">
+                    </div>
+                </div>
+                
+                <button type="submit" id="registerBtn" class="btn-register">Register</button>
+            </form>
+        </div>
+        
+        <div class="button-group">
+            <button id="backBtn" class="btn-back">Home</button>
+            <button id="loginBtn" class="btn-login">Already have an account? Login</button>
+        </div>
+    </div>
+    
+    <script src="registration.js"></script>
+</body>
+</html>

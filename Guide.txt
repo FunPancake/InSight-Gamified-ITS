@@ -33,9 +33,9 @@ leaderboards
 settings
 quit
 
-css visuals is 20-30%
 game
 -> procrastination behavior algorithm test
+-> procrastination algorithm
 -> visuals
 -> Gen Ai gagamit ng ELO aglo
 -> ELO algo
@@ -43,7 +43,9 @@ game
 -> achievements
 -> notices for achievement badges
 -> progression bar ||| level 20/50 
--> 
+-> game visuals/ animations / art / sound 
+-> monaco code editor
+-> terminal API to output results / errors of moncao
 
 C# topic <- Survey <- letter
 ^^^

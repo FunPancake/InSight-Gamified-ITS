@@ -1,6 +1,7 @@
 gamified-its/
 │
 ├── index.html                          # Main landing page
+├── index.js                            
 │
 ├── frontend/
 │   │
@@ -58,7 +59,7 @@ gamified-its/
 
 
 AI assisted progression Bar
-Frontend Structure:           10%  
+Frontend Structure:           10%  ------ done
 Authentication:               10% 
 Basic Routing:                 5%  
 ─────────────────────────────────

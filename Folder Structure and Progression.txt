@@ -55,3 +55,31 @@ gamified-its/
 │
 └── database/
     └── schema.sql                     # Database tables
+
+
+AI assisted progression Bar
+Frontend Structure:           10%  
+Authentication:               10% 
+Basic Routing:                 5%  
+─────────────────────────────────
+CURRENT TOTAL:                25%
+
+Database Setup:               10%
+Backend API:                  10%
+─────────────────────────────────
+AFTER DATABASE:               45%
+
+Procrastination Algorithms:   10%
+ELO System + GenAI:            8%
+Monaco Code Editor:            8%
+Terminal/Execution:            7%
+Gamification (Achievements):   7%
+Visuals/Animations/Sound:      5%
+─────────────────────────────────
+AFTER GAME LOGIC:             90%
+
+Teacher Analytics:             5%
+Testing & Bug Fixes:           3%
+Deployment & Security:         2%
+─────────────────────────────────
+PRODUCTION READY:            100%

@@ -14,3 +14,4 @@ document.addEventListener('DOMContentLoaded', function(){
         window.location.href = 'teacher.html';
     });
 })
+// testing 

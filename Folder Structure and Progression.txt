@@ -1,0 +1,86 @@
+gamified-its/
+│
+├── index.html                          # Main landing page
+├── index.js                            
+│
+├── frontend/
+│   │
+│   ├── pages/
+│   │   ├── login.html                 # Universal login page
+│   │   ├── registration.html          # Universal registration page
+│   │   │
+│   │   ├── student/
+│   │   │   ├── student-dashboard.html      # Student landing page
+│   │   │   └── game.html                   # The actual ITS game interface
+│   │   │
+│   │   ├── teacher/
+│   │   │   ├── teacher-dashboard.html      # Teacher landing page
+│   │   │   ├── class-selection.html        # Choose which class to view
+│   │   │   └── student-progress.html       # Individual student detailed progress
+│   │   │
+│   │   └── admin/
+│   │       └── admin-dashboard.html        # Admin landing page
+│   │
+│   ├── css/
+│   │   └── global.css                 # Global styles for all pages
+│   │
+│   └── js/
+│       ├── login.js                   # Login page logic
+│       ├── registration.js            # Registration page logic
+│       │
+│       ├── student/
+│       │   ├── dashboard.js           # Student dashboard logic
+│       │   └── game.js                # Game logic
+│       │
+│       └── teacher/
+│           ├── dashboard.js           # Teacher dashboard logic
+│           ├── class-selection.js     # Class selection logic
+│           └── student-progress.js    # Student progress tracking
+│
+├── backend/
+│   ├── server.js                      # Main server file
+│   │
+│   ├── config/
+│   │   └── database.js                # Database connection
+│   │
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Student.js
+│   │   ├── Teacher.js
+│   │   └── Class.js
+│   │
+│   └── controllers/
+│       ├── authController.js          # Login/Register
+│       ├── studentController.js
+│       └── teacherController.js
+│
+└── database/
+    └── schema.sql                     # Database tables
+
+
+AI assisted progression Bar
+Frontend Structure:           10%  ------ done
+Authentication:               10% 
+Basic Routing:                 5%  
+─────────────────────────────────
+CURRENT TOTAL:                25%
+
+Database Setup:               10%
+Backend API:                  10%
+─────────────────────────────────
+AFTER DATABASE:               45%
+
+Procrastination Algorithms:   10%
+ELO System + GenAI:            8%
+Monaco Code Editor:            8%
+Terminal/Execution:            7%
+Gamification (Achievements):   7%
+Visuals/Animations/Sound:      5%
+─────────────────────────────────
+AFTER GAME LOGIC:             90%
+
+Teacher Analytics:             5%
+Testing & Bug Fixes:           3%
+Deployment & Security:         2%
+─────────────────────────────────
+PRODUCTION READY:            100%

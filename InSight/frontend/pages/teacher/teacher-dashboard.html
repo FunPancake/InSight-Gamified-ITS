@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - Gamified ITS</title>
+    <link rel="stylesheet" href="../../css/global.css">
+</head>
+<body>
+    <div class="container">
+        <header class="dashboard-header">
+            <h1>Teacher Dashboard</h1>
+            <button id="logoutBtn" class="btn-logout">Logout</button>
+        </header>
+        
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+            <h2>Welcome, <span id="teacherName">Teacher</span>!</h2>
+            <p>Teacher ID: <span id="teacherId">N/A</span></p>
+            <p>Department: <span id="teacherDepartment">N/A</span></p>
+        </div>
+        
+        <!-- Quick Overview Section (Placeholder) -->
+        <div class="overview-section">
+            <h3>Quick Overview</h3>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <p class="overview-value" id="totalClasses">0</p>
+                    <p class="overview-label">Classes Managed</p>
+                </div>
+                
+                <div class="overview-card">
+                    <p class="overview-value" id="totalStudents">0</p>
+                    <p class="overview-label">Total Students</p>
+                </div>
+                
+                <div class="overview-card">
+                    <p class="overview-value" id="activeStudents">0</p>
+                    <p class="overview-label">Active Today</p>
+                </div>
+                
+                <div class="overview-card">
+                    <p class="overview-value" id="avgProgress">0%</p>
+                    <p class="overview-label">Avg. Progress</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Classes Section -->
+        <div class="classes-section">
+            <h3>My Classes</h3>
+            <div id="classesList" class="classes-list">
+                <!-- Classes will be dynamically loaded here -->
+            </div>
+        </div>
+        
+        <!-- Action Buttons Section -->
+        <div class="actions-section">
+            <h3>Quick Actions</h3>
+            <div class="actions-grid">
+                <button id="viewClassesBtn" class="action-btn">
+                    <span class="action-icon">📚</span>
+                    <span class="action-text">View All Classes</span>
+                </button>
+                
+                <button id="viewAnalyticsBtn" class="action-btn">
+                    <span class="action-icon">📊</span>
+                    <span class="action-text">View Analytics</span>
+                </button>
+                
+                <button id="manageStudentsBtn" class="action-btn">
+                    <span class="action-icon">👥</span>
+                    <span class="action-text">Manage Students</span>
+                </button>
+                
+                <button id="settingsBtn" class="action-btn">
+                    <span class="action-icon">⚙️</span>
+                    <span class="action-text">Settings</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Placeholder Notice -->
+        <div class="placeholder-notice">
+            <p>⚠️ This is a basic dashboard. More features coming soon!</p>
+        </div>
+    </div>
+    
+    <script src="../../js/teacher/dashboard.js"></script>
+</body>
+</html>

@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Registration - Gamified ITS</title>
+    <link rel="stylesheet" href="../css/global.css">
 </head>
 <body>
     <div class="container">
-        <h1>Registration</h1>
+        <header>
+            <h1>Registration</h1>
+            <p>Create your account to get started</p>
+        </header>
         
         <div class="registration-form">
             <form id="registrationForm">
@@ -19,11 +23,16 @@
                         <option value="">-- Select Role --</option>
                         <option value="student">Student</option>
                         <option value="teacher">Teacher</option>
-                        <option value="proctor">Proctor</option>
+                        <option value="admin">Admin</option>
                     </select>
                 </div>
                 
-                <!-- Basic Information (for all users) -->
+                <!-- Basic Information -->
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
                 <div class="form-group">
                     <label for="fullName">Full Name:</label>
                     <input type="text" id="fullName" name="fullName" required>
@@ -44,18 +53,25 @@
                     <input type="password" id="confirmPassword" name="confirmPassword" required>
                 </div>
                 
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
                 <!-- Student-specific fields -->
                 <div id="studentFields" class="role-specific-fields" style="display: none;">
                     <h3>Student Information</h3>
                     
                     <div class="form-group">
-                        <label for="grade">Grade/Year Level:</label>
-                        <input type="text" id="grade" name="grade">
+                        <label for="studentId">Student ID:</label>
+                        <input type="text" id="studentId" name="studentId">
                     </div>
                     
                     <div class="form-group">
-                        <label for="section">Section/Class:</label>
-                        <input type="text" id="section" name="section">
+                        <label for="classSection">Class/Section:</label>
+                        <select id="classSection" name="classSection">
+                            <option value="">-- Select Class --</option>
+                        </select>
                     </div>
                 </div>
                 
@@ -74,41 +90,42 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="subject">Subject(s) Teaching:</label>
-                        <input type="text" id="subject" name="subject">
+                        <label for="teacherClassInput">Classes Managing:</label>
+                        <input type="text" id="teacherClassInput" name="teacherClassInput" placeholder="e.g., Grade 7-A, Grade 8-B, Grade 9-C">
+                        <small>Enter class names separated by commas</small>
                     </div>
                 </div>
                 
-                <!-- Proctor-specific fields -->
-                <div id="proctorFields" class="role-specific-fields" style="display: none;">
-                    <h3>Proctor Information</h3>
+                <!-- Admin-specific fields -->
+                <div id="adminFields" class="role-specific-fields" style="display: none;">
+                    <h3>Admin Information</h3>
                     
                     <div class="form-group">
-                        <label for="proctorId">Employee ID:</label>
-                        <input type="text" id="proctorId" name="proctorId">
+                        <label for="adminId">Employee ID:</label>
+                        <input type="text" id="adminId" name="adminId">
                     </div>
                     
                     <div class="form-group">
-                        <label for="proctorDepartment">Department:</label>
-                        <input type="text" id="proctorDepartment" name="proctorDepartment">
+                        <label for="adminDepartment">Department:</label>
+                        <input type="text" id="adminDepartment" name="adminDepartment">
                     </div>
                     
                     <div class="form-group">
                         <label for="accessCode">Admin Access Code:</label>
-                        <input type="password" id="accessCode" name="accessCode">
+                        <input type="password" id="accessCode" name="accessCode" placeholder="Required for admin registration">
                     </div>
                 </div>
                 
-                <button type="submit" id="registerBtn" class="btn-register">Register</button>
+                <button type="submit" id="registerSubmitBtn" class="btn-register">Register</button>
             </form>
         </div>
         
         <div class="button-group">
-            <button id="backBtn" class="btn-back">Home</button>
+            <button id="backBtn" class="btn-back">Back to Home</button>
             <button id="loginBtn" class="btn-login">Already have an account? Login</button>
         </div>
     </div>
     
-    <script src="registration.js"></script>
+    <script src="../js/registration.js"></script>
 </body>
 </html>

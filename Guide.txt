@@ -64,5 +64,37 @@ database 1-5%
 - 1 file
 
 
-+new test
-test 2
+training Procrastination algorithm
+
+step 1
+procrastination metrics
+- delay after task is presented
+- delay before first interaction
+- high activity close to deadline
+- late submission
+- avoidance to difficult tasks
+- no. of interactions per sessions
+- log data
+
+step 2
+- data base these metrics
+
+step 3
+- rule-based if statements
+- functions measuring activity within site
+
+step 4
+- compile and comprehend the step 3 results
+
+step 5
+- use algorithm(bayes, logistics, etc) to create results
+- results will create distribution curve
+- within the curve will decide which procrastinator or not
+
+
+step 6
+- train
+- where train data idk yet
+
+step 7
+- results metrics

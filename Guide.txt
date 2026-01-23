@@ -72,9 +72,13 @@ procrastination metrics
 - delay before first interaction
 - high activity close to deadline
 - late submission
-- avoidance to difficult tasks
 - no. of interactions per sessions
 - log data
+- Nighttime or Off-Hour Cramming
+- Erratic Login Patterns
+- Hint Overuse Without Progress
+- Task Switching / Avoidance
+- Frequent Session Abandonment
 
 step 2
 - data base these metrics

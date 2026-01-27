@@ -1,0 +1,21 @@
+{
+  "name": "insight-gamified-its",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FunPancake/InSight-Gamified-ITS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/FunPancake/InSight-Gamified-ITS/issues"
+  },
+  "homepage": "https://github.com/FunPancake/InSight-Gamified-ITS#readme"
+}
